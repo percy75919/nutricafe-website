@@ -1,0 +1,66 @@
+.footer {
+  background: #1a1814;
+  color: #fff;
+  padding: 25px 0 15px 0;
+}
+
+/* --- MODIFIED SECTION --- */
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-bottom: 20px;
+  justify-items: center; /* This centers the grid item */
+}
+
+.footerSocial {
+  text-align: center; /* This centers the text inside the item */
+}
+/* --- END OF MODIFICATION --- */
+
+.footerSocial h4 {
+  font-family: var(--font-poppins);
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffb03b;
+  margin-bottom: 10px;
+}
+
+.footerSocial p {
+  color: #eee;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 8px;
+  justify-content: center; /* This centers the social icons */
+}
+
+.socialIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #ffb03b;
+  color: #ffb03b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  background: #ffb03b;
+  color: #1a1814;
+}
+
+.footerCopyright {
+  text-align: center;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  color: #ddd;
+  font-size: 0.85rem;
+}

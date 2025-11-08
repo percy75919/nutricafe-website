@@ -1,0 +1,90 @@
+.aboutContent {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  align-items: center;
+  gap: 40px; /* Space between image and text */
+  margin-top: 40px;
+}
+
+.aboutImage {
+  flex: 1; /* Takes available space */
+  min-width: 300px; /* Ensures image isn't too small */
+}
+
+.aboutImage img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.aboutText {
+  flex: 1.5; /* Takes more space than the image */
+  min-width: 350px; /* Ensures text isn't too small */
+}
+
+.aboutText h3 {
+  font-family: var(--font-poppins);
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1814;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.aboutText .introParagraph {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.aboutText ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.aboutText ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.aboutText ul li i { /* For the checkmark icons */
+  font-size: 18px;
+  color: #ffb03b;
+  margin-right: 10px;
+  margin-top: 3px; /* Adjust if needed to align with text */
+}
+
+.aboutText p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .aboutContent {
+    flex-direction: column; /* Stack image and text vertically */
+    gap: 30px;
+  }
+  .aboutImage, .aboutText {
+    min-width: unset; /* Remove min-width to allow full flexibility */
+    width: 100%;
+  }
+  .aboutText h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .aboutText .introParagraph, .aboutText p {
+    text-align: center;
+  }
+  .aboutText ul {
+    align-self: center; /* Center the list too */
+  }
+}

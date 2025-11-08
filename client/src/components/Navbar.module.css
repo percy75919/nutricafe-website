@@ -1,0 +1,22 @@
+.navbar { background: #1a1814; height: 80px; display: flex; align-items: center; position: fixed; top: 0; left: 0; right: 0; z-index: 999; }
+.innerNav { width: 100%; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 30px; font-weight: bold; color: #fff; }
+.navLinks { display: flex; gap: 30px; }
+.navLinks a { color: #fff; transition: color 0.3s ease; }
+.navLinks a:hover { color: #ffb03b; }
+.ctaButton { background: #ffb03b; color: #1a1814; padding: 10px 25px; border-radius: 50px; font-weight: bold; }
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cartLink {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.cartLink:hover {
+  color: #ffb03b;
+}

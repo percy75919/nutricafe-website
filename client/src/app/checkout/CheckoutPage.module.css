@@ -1,0 +1,127 @@
+.checkoutLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+.customerDetails, .orderSummary {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* --- THIS IS THE CORRECTED SECTION --- */
+/* We now target the h3 elements inside our specific components */
+.customerDetails h3, .orderSummary h3 {
+  font-family: var(--font-poppins);
+  margin-top: 0;
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+/* --- END OF CORRECTION --- */
+
+.formGroup {
+  margin-bottom: 20px;
+}
+.formGroup label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.formGroup input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.summaryItem, .summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.summaryTotal {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  border-bottom: none;
+}
+.confirmBtn {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: #ffb03b;
+  color: #1a1814;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.confirmBtn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+.confirmBtn:hover:not(:disabled) {
+  background: #ffc96e;
+}
+.errorMessage {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+.orderConfirmation {
+  text-align: center;
+  padding: 80px 0;
+}
+.orderConfirmation h2 {
+  font-family: var(--font-poppins);
+  font-size: 3rem;
+  color: #ffb03b;
+}
+
+@media (max-width: 992px) {
+  .checkoutLayout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- NEW STYLES FOR PAYMENT & RECEIPT --- */
+.paymentScreen, .receipt {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.qrCodeImage {
+  width: 250px;
+  height: 250px;
+  margin: 20px auto;
+  display: block;
+}
+
+.paymentScreen h3 {
+  border: none;
+  font-size: 2rem;
+}
+
+.receipt h2 {
+  font-family: var(--font-poppins);
+  color: #ffb03b;
+}
+.receipt p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.receipt h3 {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  margin-top: 20px;
+}

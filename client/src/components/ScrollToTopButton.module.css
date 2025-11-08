@@ -1,0 +1,26 @@
+.scrollTopBtn {
+  position: fixed;
+  bottom: 90px; /* Sits 10px above the 60px chat button */
+  right: 20px;
+  z-index: 999;
+  background: #ffb03b;
+  color: #1a1814;
+  border: none;
+  border-radius: 50%;
+  width: 60px; /* MODIFIED: Changed from 45px */
+  height: 60px; /* MODIFIED: Changed from 45px */
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 1;
+  
+  /* These new lines center the SVG icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollTopBtn:hover {
+  background: #ffc96e;
+  transform: translateY(-3px);
+}
